@@ -1,0 +1,42 @@
+body.in-mobile-preview {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+
+.mobile-preview-window {
+	background-color:rgba(black, .8);
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:9999;
+	overflow:hidden;
+	display:none;
+}
+
+.ump-device-container {
+	top:-10px;
+	margin:auto;
+	position:relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ump-iframe {
+	margin:auto;
+	display: block;
+}
+
+.ump-device-iphone-5 {
+	background-image:url('../images/devices/iphone-5.png');
+	width:378px;
+	height:800px;
+	iframe {
+		top:126px;
+		position:relative;
+		width:320px;
+		height:568px;
+	}
+}
