@@ -7,6 +7,11 @@
             return false;
         });
 
+        $(document).keyup(function(e) {
+            $('.mobile-preview-window').hide();
+            $('body').removeClass('in-mobile-preview');
+        });
+
      }); // end document ready
 
 })(jQuery);
