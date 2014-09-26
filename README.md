@@ -1,5 +1,4 @@
-mobile-preview
-==============
+## Mobile Preview for WordPress
 
 WordPress plugin to preview the current view on a mobile device. You'll get a "Mobile Preview" button in the admin bar:
 
