@@ -2,7 +2,7 @@
 Contributors: jarednova
 Tags: mobile, preview, editing
 Requires at least: 3.7
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 Tested up to: 4.0
 PHP version: 5.3.0 or greater
 License: GPLv2 or later
@@ -13,10 +13,16 @@ Provides editors a view of their page on a mobile device
 == Description ==
 Provides editors a view of their page on a mobile device
 
+* More on [GitHub](https://github.com/upstatement/mobile-preview)
+
 == Changelog ==
 
 = 0.0.1 =
 * Supporting an iPhone 5 (for now)
+
+== Screenshots ==
+
+1. Click "Mobile Preview" in the admin toolbar for this view.
 
 == Installation ==
 
