@@ -34,7 +34,9 @@ class Upstatement_MobilePreview {
 		$iframe_url = self::get_current_url();
 		if (is_admin()) {
 			global $post;
-			$iframe_url = home_url('/?p='.$post->ID);
+			if ($post) {
+				$iframe_url = home_url('/?p='.$post->ID);
+			}
 		}
 		$iframe_url = add_query_arg('admin_bar', 'false', $iframe_url);
 		require_once 'mobile-preview-window.twig';
