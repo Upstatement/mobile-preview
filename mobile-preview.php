@@ -12,12 +12,12 @@ class Upstatement_MobilePreview {
 
 	function __construct() {
 		$this->load_dependencies();
-		$this->add_toolbar_action();
 		$this->detect_viewed_in_iframe();
 		add_action( 'wp_footer', array($this, 'inject_html'));
 		add_action( 'admin_footer', array($this, 'inject_html'));
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_static' ) );
 		add_action( 'admin_enqueue_scripts', array($this, 'enqueue_static') );
+    add_action( 'wp_footer', array($this, 'add_toolbar_action') );
 	}
 
 	function load_dependencies() {
@@ -34,9 +34,9 @@ class Upstatement_MobilePreview {
 		$iframe_url = self::get_current_url();
 		if (is_admin()) {
 			global $post;
-			if ($post) {
-				$iframe_url = home_url('/?p='.$post->ID);
-			}
+      if ($post) {
+        $iframe_url = home_url('/?p='.$post->ID);
+      }
 		}
 		$iframe_url = add_query_arg('admin_bar', 'false', $iframe_url);
 		require_once 'mobile-preview-window.twig';
